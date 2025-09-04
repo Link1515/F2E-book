@@ -127,13 +127,21 @@ BulkWriteResult({
 
 ### 更新
 ```js
-// db.collection.update(query, update, {upsert, multi})
-> db.collection.update({'title':'MongoDB ABCD'},{$set:{'title':'MongoDB'}}, {multi: true})
+// 更新一筆
+// db.collection.updateOne(query, update, options)
+> db.collection.updateOne({'title':'MongoDB ABCD'},{$set:{'title':'MongoDB'},{'upsert': true}})
 ```
+
+```js
+// 更新多筆
+// db.collection.updateMnay(query, update, options)
+> db.collection.updateMnay({'title':'MongoDB ABCD'},{$set:{'title':'MongoDB'}})
+```
+
 - `query` - 查詢條件
 - `update` - 更新資料，`$set` 修改指定值，`$inc` 為加減值，`$mul` 為乘值
-- `upsert` - 如果找不到資料就新增
-- `multi` - 預設只找一筆資料，設定 `true` 取代多筆資料
+- `options`
+  - `upsert` - 如果找不到資料就新增
 
 ### 刪除
 ```js
