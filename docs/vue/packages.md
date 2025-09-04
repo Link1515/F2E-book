@@ -1,6 +1,6 @@
 # 套件
 
-使用 Vue 版 Font Awesome 以及 UI 工具
+Vue 的 UI 套件與實用套件
 
 ## UI 套件
 UI 套件能快速建立頁面，提供許多已經設計好的元件和樣式，讓開發者能快速建立頁面  
@@ -14,7 +14,7 @@ UI 套件能快速建立頁面，提供許多已經設計好的元件和樣式�
 如 [Quasar](https://quasar.dev/) 使用的是 [Quasar CLI](https://quasar.dev/start/quasar-cli/)
 :::
 
-更多資訊可考 [UI 比較](https://ui-libs.vercel.app/)
+更多資訊可參考 [UI 比較](https://ui-libs.vercel.app/)
 
 - [Vuetify](https://next.vuetifyjs.com/en)
 - [Quasar](https://quasar.dev/)
